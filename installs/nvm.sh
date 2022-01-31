@@ -19,11 +19,11 @@ install_nvm() {
 	nvm install --lts
 }
 
-install_nvm 2>../logs/nvim_error.txt
+install_nvm 2>../logs/nvm_error.txt
 if [ $? -eq 0 ]
 then
 	echo -e "${GREEN}\n> NVM installed${NC}"
 else
-	echo -e "${RED}\n> Error installing NVM, go to logs/nvim_error.txt to see errors log${NC}"
+	echo -e "${RED}\n> Error installing NVM, go to logs/nvm_error.txt to see errors log${NC}"
 fi
 
