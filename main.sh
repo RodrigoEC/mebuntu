@@ -2,6 +2,11 @@
 source ./constants.sh
 source ./installs/base.sh
 
+if [ ! -d ${LOGS_PATH} ]
+then
+	mkdir ${LOGS_PATH}
+fi
+
 echo -e "${YELLOW}\n##################"
 echo -e "# Installing NVM #"
 echo -e "##################\n${NC}"
@@ -33,7 +38,8 @@ echo -e "############################\n${NC}"
 source ./installs/chrome.sh
 
 git clone https://github.com/RodrigoEC/my-dotfiles.git .dotfiles
-cp -R .dotfiles/.zshrc .zshrc
+cp -R .dotfiles/.zshrc ~/.zshrc
 cp -R .dotfiles/tmuxinator .config/
 cp -R .dotfiles .config/nvim
 
+sudo rm -rf .dotfiles
