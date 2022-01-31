@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./colors.sh
 
 install_neovim() {
 	sudo apt install neovim
@@ -8,7 +7,7 @@ install_neovim() {
 	nvim --headless +PlugInstall +qall
 }
 
-install_neovim 2>../logs/nvim_error.txt
+install_neovim 2>${LOGS_PATH}/nvim_error.txt
 if [ $? -eq 0 ]
 then
 	echo -e "${GREEN}\n> Neovim installed${NC}"

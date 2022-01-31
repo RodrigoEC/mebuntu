@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./colors.sh
 
 install_docker() {
 	echo -e "${YELLOW}> Installing dependencies${NC}"
@@ -21,7 +20,7 @@ install_docker() {
 	sudo usermod -aG docker ${USER}
 }
 
-install_docker 2>../logs/docker_error.txt
+install_docker 2>${LOGS_PATH}/docker_error.txt
 if [ $? -eq 0 ]
 then
 	echo -e "${GREEN}\n> docker and docker-compose installed successfully${NC}"

@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./colors.sh
 
 
 install_zsh() {
@@ -10,7 +9,7 @@ install_zsh() {
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
 
-install_zsh 2>../logs/zsh_errors.txt
+install_zsh 2>${LOGS_PATH}/zsh_errors.txt
 if [ $? -eq 0 ]
 then
 	echo -e "\n${GREEN}> ZSH and oh-my-zsh installed successfully${NC}"

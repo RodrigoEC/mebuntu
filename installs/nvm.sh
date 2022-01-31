@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./colors.sh
 
 install_nvm() {
 	is_valid=$('curl google.com')
@@ -19,7 +18,7 @@ install_nvm() {
 	nvm install --lts
 }
 
-install_nvm 2>../logs/nvm_error.txt
+install_nvm 2>${LOGS_PATH}/nvm_error.txt
 if [ $? -eq 0 ]
 then
 	echo -e "${GREEN}\n> NVM installed${NC}"

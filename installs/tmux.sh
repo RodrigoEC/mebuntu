@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./colors.sh
 
 install_tmux() {
 	sudo apt update
@@ -10,7 +9,7 @@ install_tmux() {
 	sudo apt install tmuxinator
 }
 
-install_tmux 2>../logs/tmux_errors.txt
+install_tmux 2>${LOGS_PATH}/tmux_errors.txt
 if [ $? -eq 0 ]
 then
 	echo -e "\n${GREEN}> TMUX and Tmuxinator installed successfully${NC}"
