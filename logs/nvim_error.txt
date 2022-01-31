@@ -1,5 +1,0 @@
-nvm.sh: line 5: curl google.com: command not found
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 15037  100 15037    0     0  39363      0 --:--:-- --:--:-- --:--:-- 39363
-v16.13.2 is already installed.
