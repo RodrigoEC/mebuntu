@@ -15,4 +15,4 @@ git clone https://github.com/RodrigoEC/mebuntu.git
 bash main.sh
 ```
 
-And that's it, if you eventually find some error pls report it for me :heart:
+And that's it, if you eventually find some error please report it for me :heart:
