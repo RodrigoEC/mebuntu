@@ -3,6 +3,7 @@
 install_base() {
 	sudo snap install discord
 	sudo snap install slack
+	sudo snap install notion-snap
 
 	curl google.com
 	if [ $? -ne 0 ]
