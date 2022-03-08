@@ -1,8 +1,7 @@
 #!/bin/bash
 
 install_base() {
-	sudo snap install discord
-	sudo snap install slack
+	sudo snap install slack --classic
 	sudo snap install notion-snap
 
 	curl google.com
@@ -14,6 +13,7 @@ install_base() {
 	fi
 
 	sudo apt install git
+	sudo snap install discord
 }
 
 install_base

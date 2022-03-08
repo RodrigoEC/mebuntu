@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 source ./constants.sh
 source ./installs/base.sh
 
@@ -38,8 +38,8 @@ echo -e "############################\n${NC}"
 source ./installs/chrome.sh
 
 git clone https://github.com/RodrigoEC/my-dotfiles.git .dotfiles
-cp -R .dotfiles/.zshrc ~/.zshrc
-cp -R .dotfiles/tmuxinator .config/
-cp -R .dotfiles .config/nvim
+cp -r .dotfiles/.zshrc ~/.zshrc
+cp -r .dotfiles/tmuxinator ~/.config/
+cp -r .dotfiles ~/.config/nvim
 
 sudo rm -rf .dotfiles
