@@ -38,8 +38,10 @@ echo -e "############################\n${NC}"
 source ./installs/chrome.sh
 
 git clone https://github.com/RodrigoEC/my-dotfiles.git .dotfiles
-cp -r .dotfiles/.zshrc ~/.zshrc
-cp -r .dotfiles/tmuxinator ~/.config/
-cp -r .dotfiles ~/.config/nvim
+cd .dotfiles
+ls -la 
+
+source destributeDots.sh
+cd ..
 
 sudo rm -rf .dotfiles
